@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Finder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Find your Gender</h1>
+    </header>
+    <main>
+        
+        <div class="formBox">           
+            <form name="myForm" onsubmit="event.preventDefault(); formSubmited()">
+                <div id="formsubmitbutton" class="box">
+                <div class="inputBox">
+                    <label for="Name">Name</label><br>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Your First Name" maxlength="20" required>
+                </div>
+                <div  >
+                    <input type="submit" name="submit" class="btn" value="Search">
+                </div>
+                 </div>
+                <div id="loader" class="box" >
+                    <img src="//www.willmaster.com/images/preload.gif" alt="loading...">
+                </div>
+                <div class="outputBox" id="outputBox" >                    
+                    <div id="output" class="box" >
+                    </div>
+                    <div id="recheck" >
+                        <input type="button" value="Reset" class="btn" onclick="resetForm()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../javascript/callBack.js"></script>
+    <!-- <script src="../javascript/promise.js"></script> -->
+    <!-- <script src="../javascript/asycawait.js"></script> -->
+</body>
+
+</html>
